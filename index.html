@@ -6,16 +6,22 @@
   <link href="style.css" rel="stylesheet">
 </head>
   <body>
+  <header>
   <h1>Guess the number</h1>
-  <p>The essence of the game is to guess as many numbers as possible
+  <p class="text">The essence of the game is to guess as many numbers as possible
     given by the robot, from 1 to 5. You have 3 attempts.</p>
-  <snap>robot emoji</snap>
+  <img src="/img/1f916.png" alt="Robot">
+  </header>
+  <div class="flex-container">
   <p>Correct answers: <snap id="counts">0</snap> </p>
   <p>Attempts: <snap id="attempts">3</snap></p>
-  <p>1 to 5?</p>
+  </div>
+  <footer>
+  <p class="text">1 to 5?</p>
   <input type="number" placeholder="type your answer" id="inp">
   <button id="checkButton">Check</button>
   <p id="trOrFl"></p>
+  </footer>
     <script src="script.js"></script>
   </body>
 </html>
