@@ -7,14 +7,15 @@
 </head>
   <body>
   <h1>Guess the number</h1>
-  <p>The essence of the game is to guess what number
-    from 1 to 5 the robot assigned. You have 3 tries</p>
+  <p>The essence of the game is to guess as many numbers as possible
+    given by the robot, from 1 to 5. You have 3 attempts.</p>
   <snap>robot emoji</snap>
-  <p>count: <snap id="counts">0</snap> </p>
+  <p>Correct answers: <snap id="counts">0</snap> </p>
+  <p>Attempts: <snap id="attempts">3</snap></p>
   <p>1 to 5?</p>
-  <input type="text" placeholder="type your answer" id="inp" value="3">
+  <input type="number" placeholder="type your answer" id="inp">
   <button id="checkButton">Check</button>
-  <p id="trOrFl">1</p>
+  <p id="trOrFl"></p>
     <script src="script.js"></script>
   </body>
 </html>
